@@ -1,3 +1,4 @@
+require 'pry'
 class Appointment
   @@all = []
   
@@ -8,6 +9,7 @@ class Appointment
   end
   
   def initialize(date, patient, doctor)
+    binding.pry
     @date = date
     @patient = patient 
     @doctor = doctor 
