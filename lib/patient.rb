@@ -10,3 +10,5 @@ class Patient
     @name = name 
     @@all << self 
   end
+  
+end
