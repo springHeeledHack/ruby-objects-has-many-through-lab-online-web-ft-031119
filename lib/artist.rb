@@ -20,6 +20,8 @@ class Artist
   end
   
   def genres
-    self.songs.select{|song| song.genre}
+    genres = []
+    self.songs.select{|song| genres << song.genre}
+    genres 
   end
 end
